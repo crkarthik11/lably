@@ -1,6 +1,6 @@
 ## 1. How to start
 ```
-$ git clone https://github.com/crkarthik11/DemoApp.git
+$ git clone https://github.com/crkarthik11/lably.git
 $ cd demoApp
 $ mvnw spring-boot:run
 $ curl -v localhost:8080
