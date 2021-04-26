@@ -1,8 +1,8 @@
 ## 1. How to start
 ```
 $ git clone https://github.com/crkarthik11/lably.git
-$ cd demoApp
-$ mvnw spring-boot:run
+$ cd lably
+$ gradlew
 $ curl -v localhost:8080
 ```
 
