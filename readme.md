@@ -42,8 +42,4 @@ $ curl -v localhost:8080
  - List of labs - Must return 5 labs in list
  - Api to return single lab by name
 
-### Book controller
-  - List of books -  Must return 5 books
-  -  Api to return single book object
-
  
