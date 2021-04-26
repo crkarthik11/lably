@@ -7,6 +7,7 @@
 ```
 $ git clone https://github.com/crkarthik11/lably.git
 $ cd lably
+$ ./gradlew
 $ ./gradlew bootRun
 $ curl -v localhost:8080
 ```
