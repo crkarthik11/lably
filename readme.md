@@ -1,6 +1,7 @@
 ## Prerequisites
 - Install Git (https://git-scm.com/download/)
 - Install Java 8 (https://adoptopenjdk.net/index.html?variant=openjdk8&jvmVariant=hotspot)
+- Test line 
 
 ## 1. How to start
 ```
