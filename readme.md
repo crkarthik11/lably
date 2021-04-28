@@ -41,11 +41,13 @@ $ curl -v localhost:8080
 ## APIs 
 
 ### Admin controller
- - List of admins - Must return 5 admin objects
- - Api to return single admin by username
+ - Add Admin (POST) 
+ - List of admins - Must return 5 admin objects (GET)
+ - Api to return single admin by username (GET)
 
 ### Lab controller
- - List of labs - Must return 5 labs in list
- - Api to return single lab by name
+ - Add Lab (Post)
+ - List of labs - Must return 5 labs in list (GET)
+ - Api to return single lab by name (GET)
 
  
