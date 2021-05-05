@@ -11,6 +11,10 @@ $ ./gradlew
 $ ./gradlew bootRun
 $ curl -v localhost:8080
 ```
+## 2. How to access swagger
+
+Swagger URL: http://localhost:8080/swagger-ui.html
+
 
 ## Entities to create
 
@@ -49,5 +53,10 @@ $ curl -v localhost:8080
  - Add Lab (Post)
  - List of labs - Must return 5 labs in list (GET)
  - Api to return single lab by name (GET)
+
+
+## Refs
+ - How to create a new project : https://start.spring.io/
+ - Spring Docs :  https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
 
  
