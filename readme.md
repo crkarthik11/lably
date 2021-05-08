@@ -18,6 +18,11 @@ Swagger URL: http://localhost:8080/swagger-ui.html
 
 ## Entities to create
 
+- Get
+    - Path Param
+    - Request Param
+- Post
+
 ### Lab
  - String name
  - String address
