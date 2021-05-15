@@ -16,6 +16,10 @@ $ curl -v localhost:8080
 Swagger URL: http://localhost:8080/swagger-ui.html
 
 
+## 2. How to access H2 console
+
+Swagger URL: http://localhost:8080/database
+
 ## Entities to create
 
 - Get
