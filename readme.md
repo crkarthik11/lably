@@ -20,13 +20,24 @@ Swagger URL: http://localhost:8080/swagger-ui.html
 
 Swagger URL: http://localhost:8080/database
 
-## Entities to create
+DI: 
+https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/using-boot-spring-beans-and-dependency-injection.html
 
+
+Rest controller
 - Get
     - Path Param
     - Request Param
 - Post
     - Request Body
+
+## Spring data 
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/
+- Inbuilt CRUD queries
+- Automatic Custom Queries
+- Manual Custom Queries
+
+## Entities to create
 
 ### Lab
  - String name
@@ -81,3 +92,7 @@ Swagger URL: http://localhost:8080/database
  - Spring Docs :  https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
 
  
+
+
+SELECT * from TBL_ADMIN WHERE department = 'CSE'
+SELECT admin FROM Admin admin WHERE admin.department = :department

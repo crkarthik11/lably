@@ -37,7 +37,7 @@ public class LabController {
     }
 
     @GetMapping("/getAll")
-    public List<Lab> getAdmins() {
+    public List<Lab> getLabs() {
         return labRepository.findAll();
     }
 

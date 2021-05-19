@@ -22,8 +22,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/admin")
 public class AdminController {
 
-    ArrayList<Admin> admins = new ArrayList<>();
-
     @Autowired
     AdminRepository adminRepository;
 
@@ -89,13 +87,35 @@ public class AdminController {
 
     @GetMapping("/getAdminByUserName")
     public Admin getAdminByUserName(@RequestParam String username) {
-        Admin resAdmin = null;
-        for (Admin admin : admins) {
-            if (admin.getUsername().equalsIgnoreCase(username)) {
-                resAdmin = admin;
-            }
-        }
-        return resAdmin;
+        // Admin resAdmin = null;
+        // List<Admin> persistedAdmins = adminRepository.findAll();
+        // for (Admin admin : persistedAdmins) {
+        // if (admin.getUsername().equalsIgnoreCase(username)) {
+        // resAdmin = admin;
+        // }
+        // }
+        // return resAdmin;
+        Admin admin = adminRepository.findByUsername(username);
+        return admin;
+    }
+
+    @GetMapping("/getAdminByDepartment")
+    public List<Admin> getAdminByDepartment(@RequestParam String department) {
+        List<Admin> admin = adminRepository.retrieveDepartment(department);
+        return admin;
+    }
+
+    @GetMapping("/deleteById")
+    public void deleteById(@RequestParam Long id) {
+        adminRepository.deleteById(id);
+
+    }
+
+    @GetMapping("/deleteByUsername")
+    public void deleteByUsername(@RequestParam String username) {
+        Admin admin = adminRepository.findByUsername(username);
+        adminRepository.delete(admin);
+
     }
 
 }
